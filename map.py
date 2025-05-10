@@ -69,6 +69,7 @@ class YandexMapWidget(QWidget):
         self.theme_switch.move(0, 470)
         self.theme_switch.stateChanged.connect(self.change_theme)
 
+
     def invert_image(self, image_path):
         try:
             image = Image.open(image_path).convert("RGB")  # Конвертируем в RGB
